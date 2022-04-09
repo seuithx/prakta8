@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Главная</title>
+</head>
+<body>
+{% for cont in context %}
+<p><h2>{{context[cont]['name']}}</h2>
+<h3>{{context[cont]['about']}}</h3>
+<h3>Дата проведения мероприятия: {{context[cont]['date']}}</h3>
+<h4>Лектор: {{context[cont]['lector']}}</h4>
+<form name="main" method="post">
+    <p><input type="submit" name="{{context[cont]['name']}}" value="Регистрация"></p>
+</form>
+</p>
+{% endfor %}
+</body>
+</html>

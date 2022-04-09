@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Удалить конференции</title>
+</head>
+<body>
+<form name="main" method="post">
+    <h3>Выберете конференции для удаления:</h3>
+    {% for conf in context %}
+    <p><input type="radio" name="{{conf}}">{{conf}}</p>
+    {% endfor %}
+    <input type="submit" name="action" value="Удалить">
+</form>
+</body>
+</html>

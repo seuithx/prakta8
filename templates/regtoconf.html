@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация на коференцию</title>
+</head>
+<body>
+<h2>{{context['confid']}}</h2>
+<form name="conf" method="post">
+    <p><b>Зарегистрироваться на конференцию:</b></p>
+    <p><input type="text" name="fio" value="ФИО"></p>
+    <p><input type="text" name="phone" maxlength="50" value="Номер телефона"></p>
+    <p><input type="submit" name="{{context['confid']}}" value="Отправить"></p>
+</form>
+</body>
+</html>
